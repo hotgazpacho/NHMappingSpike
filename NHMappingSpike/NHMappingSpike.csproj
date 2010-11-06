@@ -112,6 +112,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ComponentDiagram.cd" />
     <None Include="Mappings\nhibernate-mapping.xsd">
       <SubType>Designer</SubType>
     </None>

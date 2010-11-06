@@ -15,8 +15,6 @@ namespace NHMappingSpike.Entities
             ItemKey = itemKey;
             Name = name;
         }
-
-        public virtual int ComponentKey { get; protected set; }
         public virtual ItemRevControl Item { get; protected set; }
         public virtual ItemKey ItemKey { get; protected set; }
         public virtual string Name { get; set; }
