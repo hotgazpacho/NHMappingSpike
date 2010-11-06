@@ -8,18 +8,12 @@ Global
 		Version = 1.2
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
 		Debug|x86 = Debug|x86
-		Release|Any CPU = Release|Any CPU
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1555825B-0614-4878-9795-60D33AED31FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1555825B-0614-4878-9795-60D33AED31FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1555825B-0614-4878-9795-60D33AED31FC}.Debug|x86.ActiveCfg = Debug|x86
 		{1555825B-0614-4878-9795-60D33AED31FC}.Debug|x86.Build.0 = Debug|x86
-		{1555825B-0614-4878-9795-60D33AED31FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1555825B-0614-4878-9795-60D33AED31FC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1555825B-0614-4878-9795-60D33AED31FC}.Release|x86.ActiveCfg = Release|x86
 		{1555825B-0614-4878-9795-60D33AED31FC}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
