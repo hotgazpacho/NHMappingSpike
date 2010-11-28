@@ -4,13 +4,13 @@ using NHMappingSpike.Entities;
 namespace NHMappingSpike.ValueTypes
 {
     [Serializable]
-    public class ItemKey : IEquatable<ItemKey>
+    public class ItemRevKey : IEquatable<ItemRevKey>
     {
-        protected ItemKey()
+        protected ItemRevKey()
         {
         }
 
-        public ItemKey(ItemRevControl itemRevControl, int revNo)
+        public ItemRevKey(ItemRevControl itemRevControl, int revNo)
         {
             if (itemRevControl == null)
                 throw new ArgumentNullException("itemRevControl");
@@ -23,7 +23,7 @@ namespace NHMappingSpike.ValueTypes
         public virtual int ItemId { get; protected set; }
         public virtual int RevNo { get; protected set; }
 
-        public bool Equals(ItemKey other)
+        public bool Equals(ItemRevKey other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
@@ -34,7 +34,7 @@ namespace NHMappingSpike.ValueTypes
         {
             if (ReferenceEquals(null, obj)) return false;
             if (ReferenceEquals(this, obj)) return true;
-            return obj as ItemKey != null && Equals((ItemKey) obj);
+            return obj as ItemRevKey != null && Equals((ItemRevKey) obj);
         }
 
         public override int GetHashCode()

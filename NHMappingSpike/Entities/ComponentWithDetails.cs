@@ -4,7 +4,7 @@ namespace NHMappingSpike.Entities
 {
     public class ComponentWithDetails : Component
     {
-        public ComponentWithDetails(ItemKey itemKey, string name) : base(itemKey, name)
+        public ComponentWithDetails(ItemRevKey itemRevKey, string name) : base(itemRevKey, name)
         {
         }
 

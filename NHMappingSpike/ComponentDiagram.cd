@@ -3,12 +3,11 @@
   <Class Name="NHMappingSpike.Entities.Component">
     <Position X="3.5" Y="0.5" Width="2.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAABAAAAAgAAAAAQEAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAQAAAAAAMAAAAAAAAAAAAA=</HashCode>
       <FileName>Entities\Component.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="ItemKey" />
-      <Property Name="Item" />
+      <Property Name="ItemRevKey" />
     </ShowAsAssociation>
     <Lollipop Position="0.2" />
   </Class>
@@ -27,11 +26,11 @@
       <FileName>Entities\ComponentWithDetails.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="NHMappingSpike.ValueTypes.ItemKey">
+  <Class Name="NHMappingSpike.ValueTypes.ItemRevKey">
     <Position X="7.5" Y="1.75" Width="2.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAUgAAAAAAEAAAAAIAAAAAAAAAAAAA=</HashCode>
-      <FileName>ValueTypes\ItemKey.cs</FileName>
+      <FileName>ValueTypes\ItemRevKey.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Property Name="Item" />

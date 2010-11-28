@@ -106,7 +106,7 @@
     <Compile Include="Mappings\ItemRevControlMap.cs" />
     <Compile Include="Entities\Component.cs" />
     <Compile Include="Entities\ComponentWithDetails.cs" />
-    <Compile Include="ValueTypes\ItemKey.cs" />
+    <Compile Include="ValueTypes\ItemRevKey.cs" />
     <Compile Include="Entities\ItemRevControl.cs" />
     <Compile Include="PersistenceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -9,21 +9,20 @@ namespace NHMappingSpike.Entities
         {
         }
 
-        public Component(ItemKey itemKey, string name)
+        public Component(ItemRevKey itemRevKey, string name)
         {
-            Item = itemKey.Item;
-            ItemKey = itemKey;
+            ItemRevKey = itemRevKey;
             Name = name;
         }
-        public virtual ItemRevControl Item { get; protected set; }
-        public virtual ItemKey ItemKey { get; protected set; }
+        public virtual ItemRevKey ItemRevKey { get; protected set; }
+        public virtual ItemRevControl ItemRevControl { get { return ItemRevKey.Item; } }
         public virtual string Name { get; set; }
 
         public virtual bool Equals(Component other)
         {
             if (ReferenceEquals(null, other)) return false;
             if (ReferenceEquals(this, other)) return true;
-            return Equals(other.ItemKey, ItemKey);
+            return Equals(other.ItemRevKey, ItemRevKey);
         }
 
         public override bool Equals(object obj)
@@ -36,7 +35,7 @@ namespace NHMappingSpike.Entities
 
         public override int GetHashCode()
         {
-            return ItemKey.GetHashCode();
+            return ItemRevKey.GetHashCode();
         }
     }
 }

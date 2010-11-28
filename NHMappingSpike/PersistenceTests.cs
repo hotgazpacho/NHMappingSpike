@@ -56,13 +56,11 @@ namespace NHMappingSpike
         {
             var itemRevControl = new ItemRevControl(1);
             Session.Save(itemRevControl);
-            var itemKey = new ItemKey(itemRevControl, 100);
+            var itemKey = new ItemRevKey(itemRevControl, 100);
             new PersistenceSpecification<Component>(Session)
-                //.CheckProperty(c => c.ComponentKey, 1)
-                .CheckProperty(c => c.Item, itemRevControl)
-                .CheckProperty(c => c.ItemKey, itemKey)
+                .CheckProperty(c => c.ItemRevKey, itemKey)
                 .CheckProperty(c => c.Name, "My Name")
-                .VerifyTheMappings();
+                .VerifyTheMappings(new Component(itemKey, "My Name"));
         }
 
         [Test]
@@ -70,16 +68,14 @@ namespace NHMappingSpike
         {
             var itemRevControl = new ItemRevControl(1);
             Session.Save(itemRevControl);
-            var itemKey = new ItemKey(itemRevControl, 100);
+            var itemKey = new ItemRevKey(itemRevControl, 100);
             new PersistenceSpecification<ComponentWithDetails>(Session)
-                //.CheckProperty(c => c.ComponentKey, 1)
-                .CheckProperty(c => c.Item, itemRevControl)
-                .CheckProperty(c => c.ItemKey, itemKey)
+                .CheckProperty(c => c.ItemRevKey, itemKey)
                 .CheckProperty(c => c.Name, "My Name")
                 .CheckProperty(c => c.Category, "My Category")
                 .CheckProperty(c => c.Cost, 1999.95)
                 .CheckProperty(c => c.IsCertified, true)
-                .VerifyTheMappings();
+                .VerifyTheMappings(new ComponentWithDetails(itemKey, "My Name"));
         }
 
         [TearDown]
